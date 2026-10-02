@@ -1,5 +1,4 @@
 import org.jsoup.Jsoup;
-import org.jsoup.nodes.Attribute;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Node;
@@ -8,13 +7,13 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 import java.util.List;
 
-public class HTMLpractice {
+public class htmlPlayground {
     public static void main(String[] args) throws IOException {
         Document doc = Jsoup.parse("""
                 <body>
-                <h1>Title</h1>
-                
-                <a href="www.thesite.com"><strong>Visit Example Website</strong></a>
+                <p>This is a new paragraph with a line of text
+                <br> in case you missed it there was a break that just happened
+                <br> did you see that? That was another one. </p>
                 
                 <ol>
                     <li> first </li>
@@ -23,8 +22,6 @@ public class HTMLpractice {
                 </ol>
                 </body>""");
 
-//        Elements headings = doc.select("h1");
-//        Elements paragraphs = doc.select("p");
 
         Elements children = doc.children();
         List<Node> childNodes = doc.childNodes();
@@ -33,6 +30,7 @@ public class HTMLpractice {
         System.out.println("--- Body Children ___");
         for (Element e : body.children()) {
             System.out.println("Child --> " + e);
+            System.out.println(e.nodeName());
         }
 
         System.out.println();

@@ -7,7 +7,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 
-public class Main {
+public class markdownToHTML {
     public static void main(String[] args) {
         System.out.println(mdToHTML("/mdtest.md"));
 //        System.out.println(fromHTML("/htmlTest.html"));
@@ -15,7 +15,7 @@ public class Main {
     }
 
     public static String fromHTML(String path) {
-        InputStream input = Main.class.getResourceAsStream(path);
+        InputStream input = markdownToHTML.class.getResourceAsStream(path);
 
         try (var reader = new InputStreamReader(input, StandardCharsets.UTF_8)) {
             Parser parser = Parser.builder().build();
@@ -29,7 +29,7 @@ public class Main {
 
     public static String mdToHTML (String path) {
         Parser parser = Parser.builder().build();
-        InputStream input = Main.class.getResourceAsStream(path);
+        InputStream input = markdownToHTML.class.getResourceAsStream(path);
         if (input == null) {
             return "error - file not found";
         }
