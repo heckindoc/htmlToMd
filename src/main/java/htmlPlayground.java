@@ -12,8 +12,8 @@ public class htmlPlayground {
         Document doc = Jsoup.parse("""
                 <body>
                 <p>This is a new paragraph with a line of text
-                <br> in case you missed it there was a break that just happened
-                <br> did you see that? That was another one. </p>
+                <br>in case you missed it there was a break that just happened
+                <br>did you see that? That was another one. </p>
                 
                 <ol>
                     <li> first </li>
@@ -31,6 +31,7 @@ public class htmlPlayground {
         for (Element e : body.children()) {
             System.out.println("Child --> " + e);
             System.out.println(e.nodeName());
+            iterateNodes(e);
         }
 
         System.out.println();
@@ -40,18 +41,14 @@ public class htmlPlayground {
 //        for (Attribute a : body.child(1).attributes()) {
 //            System.out.println(a);
 //        }
-//
-        Element url = body.child(1);
-        for (Node n : url.childNodes()) {
-            System.out.println(n.nodeName());
-            System.out.println(n);
+    }
+
+    public static void iterateNodes(Element element) {
+        System.out.println("--- " + element.nodeName() + " Children ___");
+        for (Element e : element.children()) {
+            System.out.println("Child --> " + e);
+            System.out.println(e.nodeName());
+            iterateNodes(e);
         }
-
-        System.out.println(url.ownText());
-
-        System.out.println(url.attribute("href"));
-
-        System.out.println(url.attr("href"));
-
     }
 }

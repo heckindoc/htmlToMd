@@ -39,7 +39,7 @@ public class htmlToMarkdown {
                         }
                     } else {
                         // TODO: Need to fix trailing whitespaces --> can't do stripTrailing() with following inline elements
-                        text.append(((TextNode) n).text());
+                        text.append(((TextNode) n).text().stripLeading());
                         if (!isInlineNeighbor(n.nextSibling())) {
                             text.append("\n");
                         }
@@ -47,7 +47,7 @@ public class htmlToMarkdown {
                 }
             } else if (n instanceof Element) {
                 switch (n.nodeName()) {
-                    // TODO: add <br>, <blockquote>, <code>, <pre>, <div>, <h4>, <h5>, <h6>, <mark>, <sup>, <sub>
+                    // TODO: add <blockquote>, <code>, <pre>, <div>, <h4>, <mark>, <sup>, <sub>
                     // Block cases
 
                     // headings
@@ -78,21 +78,21 @@ public class htmlToMarkdown {
                     case "b", "strong" -> {
                         String boldedText = iterateNodes(n, indentLevel);
                         text.append(wrapBlock(boldedText.strip(),
-                            addWhiteSpaces(findLeadingWhiteSpaces(boldedText)) + "**",
-                            "**" + addWhiteSpaces(findTrailingWhiteSpaces(boldedText))));
+                            trailingSubstring(findLeadingWhiteSpaces(boldedText), boldedText) + "**",
+                            "**" + trailingSubstring(findTrailingWhiteSpaces(boldedText), boldedText)));
                     }
                     case "em", "i" -> {
                         String emphasizedText = iterateNodes(n, indentLevel);
                         text.append(wrapBlock(emphasizedText.strip(),
-                                addWhiteSpaces(findLeadingWhiteSpaces(emphasizedText)) + "*",
-                                "*" + addWhiteSpaces(findTrailingWhiteSpaces(emphasizedText))));
+                                trailingSubstring(findLeadingWhiteSpaces(emphasizedText), emphasizedText) + "*",
+                                "*" + trailingSubstring(findTrailingWhiteSpaces(emphasizedText), emphasizedText)));
                     }
+                    case "br" -> text.append("  \n");
                     case "a" -> {
                         String link = linkBuilder(n, indentLevel);
                         text.append(wrapBlock(link.strip(),
-                                addWhiteSpaces(findLeadingWhiteSpaces(link)),
-                                 addWhiteSpaces(findTrailingWhiteSpaces(link))));
-
+                                trailingSubstring(findLeadingWhiteSpaces(link), link),
+                                 trailingSubstring(findTrailingWhiteSpaces(link), link)));
                     }
                     default -> {
                         //TODO: How to handle missing nodes --> log vs put into .md
@@ -132,14 +132,11 @@ public class htmlToMarkdown {
         return (string.length() - string.stripTrailing().length());
     }
 
-    private static String addWhiteSpaces (int numberToAdd) {
-        String text = "";
+    private static String trailingSubstring(int numberToAdd, String text) {
         if (numberToAdd == 0) {
-            return text;
+            return "";
         }
-        for (int i = 0 ; i < numberToAdd ; i++) {
-            text = text.concat(" ");
-        }
+            text = text.substring(text.length() - numberToAdd);
         return text;
     }
 
