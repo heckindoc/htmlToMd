@@ -5,28 +5,25 @@ import org.jsoup.nodes.Element;
 import org.jsoup.nodes.LeafNode;
 import org.jsoup.nodes.Node;
 import org.jsoup.nodes.TextNode;
-import java.io.IOException;
-import java.io.InputStream;
+
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-public class htmlToMarkdown {
-    public static void main(String[] args) {
-        try (InputStream inputStream = markdownToHTML.class.getResourceAsStream("/htmlTest2.html")) {
-            Document doc = Jsoup.parse(inputStream, "UTF-8", "");
-            Element next = doc.firstElementChild();
+public class HtmlToMarkdownConverter {
 
+    public HtmlToMarkdownConverter() {}
 
-            System.out.println(iterateNodes(next, 0));
-
-        } catch (IOException e) {
-            System.out.println("IO EXCEPTION ON INPUT STREAM");
+    public String convertToMarkdown(String html) {
+        Document doc = Jsoup.parse(html);
+        Element next = doc.firstElementChild();
+        if (next != null) {
+            return iterateNodes(next, 0);
         }
+        else return "";
     }
-
     // TODO: Build unified warning message for use in linkBuilder and default.
-    public static String iterateNodes(Node node, int indentLevel) {
+    private String iterateNodes(Node node, int indentLevel) {
         StringBuilder text = new StringBuilder();
         Set<String> ignoreList = new HashSet<>(List.of("body", "head"));
         List<Node> nodes = node.childNodes();
@@ -112,11 +109,11 @@ public class htmlToMarkdown {
         return text.toString();
     }
 
-    private static String wrapBlock(String innerContent, String prefix, String suffix) {
+    private String wrapBlock(String innerContent, String prefix, String suffix) {
         return prefix + innerContent + suffix;
     }
 
-    private static boolean isInlineNeighbor (Node neighbor) {
+    private boolean isInlineNeighbor (Node neighbor) {
         if (neighbor == null) {
             return true;
         }
@@ -129,15 +126,15 @@ public class htmlToMarkdown {
         return false;
     }
 
-    private static int findLeadingWhiteSpaces (String string) {
+    private int findLeadingWhiteSpaces (String string) {
         return (string.length() - string.stripLeading().length());
     }
 
-    private static int findTrailingWhiteSpaces (String string) {
+    private int findTrailingWhiteSpaces (String string) {
         return (string.length() - string.stripTrailing().length());
     }
 
-    private static String trailingSubstring(int numberToAdd, String text) {
+    private String trailingSubstring(int numberToAdd, String text) {
         if (numberToAdd == 0) {
             return "";
         }
@@ -145,7 +142,7 @@ public class htmlToMarkdown {
         return text;
     }
 
-    private static String addLineSeparators (Element thisElement, Element nextElement) {
+    private String addLineSeparators (Element thisElement, Element nextElement) {
         if (nextElement == null) {
             return "";
         }
@@ -159,14 +156,14 @@ public class htmlToMarkdown {
         else return "";
     }
 
-    private static int determineIndent (int level) {
+    private int determineIndent (int level) {
         if (level <= 0) {
             return 0;
         }
         return (level - 1) * 2;
     }
 
-    private static String indentSpaces (int level) {
+    private String indentSpaces (int level) {
         String text = "";
         if (level == 0) {
             return text;
@@ -177,7 +174,7 @@ public class htmlToMarkdown {
         return text;
     }
 
-    private static String listItemPrefix (Element element) {
+    private String listItemPrefix (Element element) {
         Element parent = element.parent();
         if (parent != null) {
             if (parent.nodeName().equals("ul")) {
@@ -189,7 +186,7 @@ public class htmlToMarkdown {
         return "";
     }
 
-    private static String linkBuilder (Node node, int level) {
+    private String linkBuilder (Node node, int level) {
         if (!node.hasAttr("href") || node.attr("href").isBlank()) {
             return "URL Missing: " + iterateNodes(node, level);
         } else
@@ -199,7 +196,7 @@ public class htmlToMarkdown {
     }
 
     // TODO: We could end up removing a <br> tag in a case like this: <blockquote><p>last line<br></p></blockquote> --> needs fixing?
-    private static String blockQuotePrefix (String string) {
+    private String blockQuotePrefix (String string) {
         String[] stringArray = string.split("\n");
         StringBuilder outText = new StringBuilder();
         for (String s : stringArray) {

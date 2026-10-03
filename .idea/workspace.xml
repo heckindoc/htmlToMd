@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15e8e32d-e8d7-4493-8b60-1d8f078e1bda" name="Changes" comment="Remove useless toHTML method from markdownToHTML.java. Modify test files for more test cases.">
+    <list default="true" id="15e8e32d-e8d7-4493-8b60-1d8f078e1bda" name="Changes" comment="blockquote case added for adding blockquote tags from html.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/htmlPlayground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/htmlPlayground.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/htmlToMarkdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/htmlToMarkdown.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/htmlTest2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/htmlTest2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/htmlToMarkdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/htmlToMarkdownConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/markdownToHTML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/markdownToHtmlConverter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +36,13 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -133,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1790992816370</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="blockquote case added for adding blockquote tags from html.">
+      <option name="closed" value="true" />
+      <created>1791000509911</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1791000509911</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,14 +156,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Remove useless toHTML method from markdownToHTML.java. Modify test files for more test cases." />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove useless toHTML method from markdownToHTML.java. Modify test files for more test cases." />
+    <MESSAGE value="blockquote case added for adding blockquote tags from html." />
+    <option name="LAST_COMMIT_MESSAGE" value="blockquote case added for adding blockquote tags from html." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/htmlToMarkdown.java</url>
-          <line>73</line>
+          <url>file://$PROJECT_DIR$/src/main/java/htmlToMarkdownConverter.java</url>
+          <line>71</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
