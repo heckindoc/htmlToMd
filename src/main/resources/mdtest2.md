@@ -1,4 +1,4 @@
-# This is a heading
+# <center>This is a heading</center>
 - a new unordered list
 - with two items
 

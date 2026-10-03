@@ -1,4 +1,4 @@
-# This is a heading
+# <center>This is a heading</center>
 
 This is a brand new paragraph that we are going to   
 insert some new line breaks into. This is a block of text with   

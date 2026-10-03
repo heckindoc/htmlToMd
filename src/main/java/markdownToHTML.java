@@ -10,23 +10,10 @@ import java.nio.charset.StandardCharsets;
 public class markdownToHTML {
     public static void main(String[] args) {
         System.out.println(mdToHTML("/mdtest.md"));
-//        System.out.println(fromHTML("/htmlTest.html"));
 
     }
 
-    public static String fromHTML(String path) {
-        InputStream input = markdownToHTML.class.getResourceAsStream(path);
-
-        try (var reader = new InputStreamReader(input, StandardCharsets.UTF_8)) {
-            Parser parser = Parser.builder().build();
-            Node document = parser.parseReader(reader);
-            MarkdownRenderer renderer = MarkdownRenderer.builder().build();
-            return renderer.render(document); // I need to figure out how to convert to Node
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
+    // TODO: better error logging...
     public static String mdToHTML (String path) {
         Parser parser = Parser.builder().build();
         InputStream input = markdownToHTML.class.getResourceAsStream(path);
