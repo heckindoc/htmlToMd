@@ -6,13 +6,13 @@ public class MarkdownToHtmlConverter {
     public MarkdownToHtmlConverter() {}
 
     public String convertToHtml(String markdown) {
-        if (markdown.isEmpty()) {
+        if (markdown.isBlank()) {
             return "";
         }
-        else return readAction(markdown);
+        else return convert(markdown);
     }
 
-    private String readAction(String input) {
+    private String convert(String input) {
         Parser parser = Parser.builder().build();
         Node document = parser.parse(input);
         HtmlRenderer renderer = HtmlRenderer.builder().build();

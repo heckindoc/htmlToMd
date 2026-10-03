@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15e8e32d-e8d7-4493-8b60-1d8f078e1bda" name="Changes" comment="blockquote case added for adding blockquote tags from html.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/test.java" afterDir="false" />
+    <list default="true" id="15e8e32d-e8d7-4493-8b60-1d8f078e1bda" name="Changes" comment="Convert to instantiable classes from static classes. General tidying.">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/s-img.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/htmlToMarkdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/htmlToMarkdownConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/markdownToHTML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/markdownToHtmlConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HtmlToMarkdownConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HtmlToMarkdownConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MarkdownToHtmlConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MarkdownToHtmlConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/htmlTest2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/htmlTest2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mdtest.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mdtest.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +75,7 @@
     "Gradle.htmlToMd [:htmlPlayground.main()].executor": "Run",
     "Gradle.htmlToMd [:htmlToMarkdown.main()].executor": "Run",
     "Gradle.htmlToMd [:markdownToHTML.main()].executor": "Run",
+    "Gradle.htmlToMd [:test.main()].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
@@ -79,14 +83,16 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "editor.preferences.completion.inline"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.htmlPlayground">
+  <component name="RunManager" selected="Application.test">
     <configuration name="htmlPlayground" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="htmlPlayground" />
       <module name="htmlToMd.main" />
@@ -108,8 +114,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="htmlToMd.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.htmlPlayground" />
         <item itemvalue="Application.htmlToMarkdown" />
         <item itemvalue="Application.markdownToHTML" />
@@ -148,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791000509911</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Convert to instantiable classes from static classes. General tidying.">
+      <option name="closed" value="true" />
+      <created>1791001780979</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1791001780979</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,14 +179,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Remove useless toHTML method from markdownToHTML.java. Modify test files for more test cases." />
     <MESSAGE value="blockquote case added for adding blockquote tags from html." />
-    <option name="LAST_COMMIT_MESSAGE" value="blockquote case added for adding blockquote tags from html." />
+    <MESSAGE value="Convert to instantiable classes from static classes. General tidying." />
+    <option name="LAST_COMMIT_MESSAGE" value="Convert to instantiable classes from static classes. General tidying." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/htmlToMarkdownConverter.java</url>
-          <line>71</line>
+          <url>file://$PROJECT_DIR$/src/main/java/HtmlToMarkdownConverter.java</url>
+          <line>77</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

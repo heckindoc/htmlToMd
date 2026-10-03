@@ -15,14 +15,18 @@ public class HtmlToMarkdownConverter {
     public HtmlToMarkdownConverter() {}
 
     public String convertToMarkdown(String html) {
-        Document doc = Jsoup.parse(html);
-        Element next = doc.firstElementChild();
-        if (next != null) {
-            return iterateNodes(next, 0);
+        if (html.isBlank()) {
+            return "";
         }
-        else return "";
+        else {
+            Document doc = Jsoup.parse(html);
+            Element next = doc.firstElementChild();
+            if (next != null) {
+                return iterateNodes(next, 0);
+            }
+            else return "";
+        }
     }
-    // TODO: Build unified warning message for use in linkBuilder and default.
     private String iterateNodes(Node node, int indentLevel) {
         StringBuilder text = new StringBuilder();
         Set<String> ignoreList = new HashSet<>(List.of("body", "head"));
@@ -44,7 +48,10 @@ public class HtmlToMarkdownConverter {
                 }
             } else if (n instanceof Element) {
                 switch (n.nodeName()) {
-                    // TODO: add <blockquote>, <code>, <pre>, <div>, <h4>, <mark>, <sup>, <sub>
+                    // TODO: add <code>, <pre>, <div>, <img>
+                    // The following tags are not supported by Commonmark, for that reason they are not included here:
+                    // <mark>, <sup>, <sub>
+
                     // Block cases
 
                     // headings

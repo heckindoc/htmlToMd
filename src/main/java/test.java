@@ -4,12 +4,23 @@ import org.jsoup.nodes.Element;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 
 public class test {
+
+
     public static void main(String[] args) {
-        try (InputStream inputStream = markdownToHTML.class.getResourceAsStream("/htmlTest2.html")) {
-            Document doc = Jsoup.parse(inputStream, "UTF-8", "");
-            Element next = doc.firstElementChild();
+        MarkdownToHtmlConverter mdConverter = new MarkdownToHtmlConverter();
+
+        try (InputStream inputStream = test.class.getResourceAsStream("/mdtest.md")) {
+            String input = new String(inputStream.readAllBytes(), StandardCharsets.UTF_8);
+
+            System.out.println(mdConverter.convertToHtml(input));
+
+            //            Document doc = Jsoup.parse(inputStream, "UTF-8", "");
+//            Element next = doc.firstElementChild();
+
+
 
 
 

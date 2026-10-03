@@ -6,6 +6,10 @@ two line breaks inserted into it.
 - a new unordered list
 - with two items
 
+==marked text==
+superscripted^2^
+subscripted~3~
+
 New paragraph here
 - unordered list
 - next item
