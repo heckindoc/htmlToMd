@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15e8e32d-e8d7-4493-8b60-1d8f078e1bda" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/markdownToHTML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/markdownToHTML.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mdtest.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mdtest.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mdtest2.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mdtest2.md" afterDir="false" />
+    <list default="true" id="15e8e32d-e8d7-4493-8b60-1d8f078e1bda" name="Changes" comment="Remove useless toHTML method from markdownToHTML.java. Modify test files for more test cases.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/htmlPlayground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/htmlPlayground.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/htmlToMarkdown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/htmlToMarkdown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/htmlTest2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/htmlTest2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +62,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.htmlToMd [:htmlPlayground.main()].executor": "Run",
+    "Gradle.htmlToMd [:htmlToMarkdown.main()].executor": "Run",
     "Gradle.htmlToMd [:markdownToHTML.main()].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -76,10 +75,25 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.completion.inline"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.htmlPlayground">
+    <configuration name="htmlPlayground" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="htmlPlayground" />
+      <module name="htmlToMd.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="htmlToMarkdown" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="htmlToMarkdown" />
+      <module name="htmlToMd.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="markdownToHTML" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="markdownToHTML" />
       <module name="htmlToMd.main" />
@@ -89,6 +103,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.htmlPlayground" />
+        <item itemvalue="Application.htmlToMarkdown" />
         <item itemvalue="Application.markdownToHTML" />
       </list>
     </recent_temporary>
@@ -109,9 +125,37 @@
       <option name="presentableId" value="Default" />
       <updated>1790970542528</updated>
     </task>
+    <task id="LOCAL-00001" summary="Remove useless toHTML method from markdownToHTML.java. Modify test files for more test cases.">
+      <option name="closed" value="true" />
+      <created>1790992816370</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1790992816370</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Remove useless toHTML method from markdownToHTML.java. Modify test files for more test cases." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove useless toHTML method from markdownToHTML.java. Modify test files for more test cases." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/htmlToMarkdown.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

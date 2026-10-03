@@ -64,6 +64,11 @@ public class htmlToMarkdown {
                     case "h6" -> text.append(indentSpaces(determineIndent(indentLevel))).append(wrapBlock(iterateNodes(n, indentLevel),
                             "###### ", addLineSeparators((Element) n, n.nextElementSibling())));
 
+                    // blockquotes
+                    case "blockquote" -> text.append(indentSpaces(determineIndent(indentLevel)))
+                            .append(wrapBlock(blockQuotePrefix(iterateNodes(n, indentLevel)),
+                            "", addLineSeparators((Element) n, n.nextElementSibling())));
+
                     // paragraphs
                     case "p" -> text.append(indentSpaces(determineIndent(indentLevel))).append(wrapBlock(iterateNodes(n, indentLevel),
                             "", addLineSeparators((Element) n, n.nextElementSibling())));
@@ -191,6 +196,16 @@ public class htmlToMarkdown {
         {
             return "[" + iterateNodes(node, level) + "]" + "(" + node.attr("href") + ")";
         }
+    }
+
+    // TODO: We could end up removing a <br> tag in a case like this: <blockquote><p>last line<br></p></blockquote> --> needs fixing?
+    private static String blockQuotePrefix (String string) {
+        String[] stringArray = string.split("\n");
+        StringBuilder outText = new StringBuilder();
+        for (String s : stringArray) {
+            outText.append("> ").append(s).append("\n");
+        }
+        return outText.toString().stripTrailing();
     }
 
 }
