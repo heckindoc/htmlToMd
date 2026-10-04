@@ -11,26 +11,32 @@ import java.util.List;
 public class htmlPlayground {
     public static void main(String[] args) throws IOException {
         Document doc = Jsoup.parse("""
-                <h1>this is a heading</h1>
-                <p>This is a new paragraph with a line of text
-                <br>in case you missed it there was a break that just happened
-                <br>did you see that? That was another one. </p>
-                
-                <ol>
-                    <li> first </li>
-                    <li> number 2 </li>
-                    <li> number three </li>
-                </ol>
+                <pre> A simple test.
+                <code>function greetUser() {
+                    console.log("Hello, World!");
+                    return true;
+                }</code>
+                <p>      A new paragraph after the code</p></pre>
+               
                 """);
 
         Elements children = doc.children();
         List<Node> childNodes = doc.childNodes();
-        Element next = doc.firstElementChild();
+        Element next = doc.body();
 
-        System.out.println("--- Body Children ___");
+        next.select("pre");
+//        System.out.println("WHOLE TEXT EXAMPLE");
+//        System.out.println(next.wholeText());
+//        System.out.println("-------------");
+//        System.out.println(next.wholeOwnText());
+//        System.out.println(next.html());
+
         for (Element e : next.children()) {
-            System.out.println("Child --> " + e);
             System.out.println(e.nodeName());
+            System.out.print(e.wholeOwnText());
+//            System.out.printf("--- %s Children ___\n", e.normalName());
+//            System.out.println("Child --> " + e);
+//            System.out.println(e.nodeName());
             iterateNodes(e);
         }
 //
@@ -44,10 +50,13 @@ public class htmlPlayground {
     }
 
     public static void iterateNodes(Element element) {
-        System.out.println("--- " + element.nodeName() + " Children ___");
+//        System.out.println("--- " + element.nodeName() + " Children ___");
         for (Element e : element.children()) {
-            System.out.println("Child --> " + e);
             System.out.println(e.nodeName());
+            System.out.print(e.wholeOwnText());
+//            System.out.println("Child --> " + e);
+//            System.out.println(e.nodeName());
+//            System.out.println("- Attributes --> " + e.attributes());
             iterateNodes(e);
         }
     }

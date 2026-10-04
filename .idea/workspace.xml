@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15e8e32d-e8d7-4493-8b60-1d8f078e1bda" name="Changes" comment="Convert to instantiable classes from static classes. General tidying.">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/s-img.jpg" afterDir="false" />
+    <list default="true" id="15e8e32d-e8d7-4493-8b60-1d8f078e1bda" name="Changes" comment="Small tidying, adding test image">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HtmlToMarkdownConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HtmlToMarkdownConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MarkdownToHtmlConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MarkdownToHtmlConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/htmlPlayground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/htmlPlayground.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/htmlTest2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/htmlTest2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mdtest.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mdtest.md" afterDir="false" />
@@ -92,7 +91,12 @@
     "settings.editor.selected.configurable": "editor.preferences.completion.inline"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Developer\htmlToMd\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.htmlPlayground">
     <configuration name="htmlPlayground" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="htmlPlayground" />
       <module name="htmlToMd.main" />
@@ -170,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791001780979</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Small tidying, adding test image">
+      <option name="closed" value="true" />
+      <created>1791058098781</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1791058098781</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,14 +192,15 @@
     <MESSAGE value="Remove useless toHTML method from markdownToHTML.java. Modify test files for more test cases." />
     <MESSAGE value="blockquote case added for adding blockquote tags from html." />
     <MESSAGE value="Convert to instantiable classes from static classes. General tidying." />
-    <option name="LAST_COMMIT_MESSAGE" value="Convert to instantiable classes from static classes. General tidying." />
+    <MESSAGE value="Small tidying, adding test image" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small tidying, adding test image" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/HtmlToMarkdownConverter.java</url>
-          <line>77</line>
+          <line>85</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

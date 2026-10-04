@@ -6,9 +6,13 @@ two line breaks inserted into it.
 - a new unordered list
 - with two items
 
-==marked text==
-superscripted^2^
-subscripted~3~
+![foo]( "title")
+![foo](/ "title")
+!(/url "title")
+![foo](/url)
+![foo](/url "")
+![foo]
+![foo]()
 
 New paragraph here
 - unordered list

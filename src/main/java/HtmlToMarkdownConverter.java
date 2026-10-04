@@ -48,7 +48,7 @@ public class HtmlToMarkdownConverter {
                 }
             } else if (n instanceof Element) {
                 switch (n.nodeName()) {
-                    // TODO: add <code>, <pre>, <div>, <img>
+                    // TODO: add <code>, <pre>, <div>
                     // The following tags are not supported by Commonmark, for that reason they are not included here:
                     // <mark>, <sup>, <sub>
 
@@ -72,6 +72,14 @@ public class HtmlToMarkdownConverter {
                     case "blockquote" -> text.append(indentSpaces(determineIndent(indentLevel)))
                             .append(wrapBlock(blockQuotePrefix(iterateNodes(n, indentLevel)),
                             "", addLineSeparators((Element) n, n.nextElementSibling())));
+
+                    // images
+                    case "img" -> {
+                        String img = imageBuilder(n);
+                        text.append(wrapBlock(img.strip(),
+                                trailingSubstring(findLeadingWhiteSpaces(img), img),
+                                trailingSubstring(findTrailingWhiteSpaces(img), img)));
+                    }
 
                     // paragraphs
                     case "p" -> text.append(indentSpaces(determineIndent(indentLevel))).append(wrapBlock(iterateNodes(n, indentLevel),
@@ -210,6 +218,23 @@ public class HtmlToMarkdownConverter {
             outText.append("> ").append(s).append("\n");
         }
         return outText.toString().stripTrailing();
+    }
+
+    private String imageBuilder (Node node) {
+        String src = !node.attr("src").isBlank() ? node.attr("src") : "Image Missing";
+        String alt = node.hasAttr("alt") ? node.attr("alt") : "";
+        String title = node.hasAttr("title") ? node.attr("title") : "";
+
+        if (src.equals("Image Missing")) {
+            if (title.isBlank()) {
+                title = "none";
+            }
+            return (src + ": Title - " + title + " | Alt - " + alt);
+        }
+        else if (title.isBlank()) {
+            return ("![" + alt + "]" + "(" + src + ")");
+        }
+        else return ("![" + alt + "]" + "(" + src + " \"" + title +"\")");
     }
 
 }
