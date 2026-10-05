@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15e8e32d-e8d7-4493-8b60-1d8f078e1bda" name="Changes" comment="Tidying files">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HtmlPlayground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/heckindoc/htmltomdconverter/HtmlPlayground.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HtmlToMarkdownConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/heckindoc/htmltomdconverter/HtmlToMarkdownConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MarkdownToHtmlConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/heckindoc/htmltomdconverter/MarkdownToHtmlConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/heckindoc/htmltomdconverter/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/htmlTest2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/htmlTest2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mdtest.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mdtest.md" afterDir="false" />
+    <list default="true" id="15e8e32d-e8d7-4493-8b60-1d8f078e1bda" name="Changes" comment="Add third party licensing.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +246,23 @@
       <option name="project" value="LOCAL" />
       <updated>1791232917332</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Reorganize package structure">
+      <option name="closed" value="true" />
+      <created>1791233778035</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1791233778035</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add third party licensing.">
+      <option name="closed" value="true" />
+      <created>1791234180127</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1791234180127</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +276,9 @@
     <MESSAGE value="image tag handling added." />
     <MESSAGE value="Added code block and inline code handling." />
     <MESSAGE value="Tidying files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tidying files" />
+    <MESSAGE value="Reorganize package structure" />
+    <MESSAGE value="Add third party licensing." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add third party licensing." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
