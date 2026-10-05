@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15e8e32d-e8d7-4493-8b60-1d8f078e1bda" name="Changes" comment="Small tidying, adding test image">
+    <list default="true" id="15e8e32d-e8d7-4493-8b60-1d8f078e1bda" name="Changes" comment="image tag handling added.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/htmlPlayground2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HtmlToMarkdownConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HtmlToMarkdownConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/htmlPlayground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/htmlPlayground.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/htmlTest2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/htmlTest2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mdtest.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mdtest.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,22 +48,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "heckindoc"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;heckindoc&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/heckindoc/htmlToMd.git",
-    "accountId": "4ae00717-657c-4dda-b0e0-6efbb6743fe5"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/heckindoc/htmlToMd.git&quot;,
+    &quot;accountId&quot;: &quot;4ae00717-657c-4dda-b0e0-6efbb6743fe5&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5,
-  "fromUser": false
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3K9X15Z57fvIz4s5LnosXu4SB0P" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -72,11 +71,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.htmlToMd [:htmlPlayground.main()].executor": "Run",
+    "Gradle.htmlToMd [:htmlPlayground2.main()].executor": "Run",
     "Gradle.htmlToMd [:htmlToMarkdown.main()].executor": "Run",
     "Gradle.htmlToMd [:markdownToHTML.main()].executor": "Run",
     "Gradle.htmlToMd [:test.main()].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
@@ -96,9 +97,16 @@
       <recent name="C:\Developer\htmlToMd\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.htmlPlayground">
+  <component name="RunManager" selected="Application.test">
     <configuration name="htmlPlayground" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="htmlPlayground" />
+      <module name="htmlToMd.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="htmlPlayground2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="htmlPlayground2" />
       <module name="htmlToMd.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,6 +135,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.htmlPlayground2" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.htmlPlayground" />
         <item itemvalue="Application.htmlToMarkdown" />
@@ -182,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791058098781</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="image tag handling added.">
+      <option name="closed" value="true" />
+      <created>1791085958350</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1791085958350</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,18 +210,8 @@
     <MESSAGE value="blockquote case added for adding blockquote tags from html." />
     <MESSAGE value="Convert to instantiable classes from static classes. General tidying." />
     <MESSAGE value="Small tidying, adding test image" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small tidying, adding test image" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/HtmlToMarkdownConverter.java</url>
-          <line>85</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="image tag handling added." />
+    <option name="LAST_COMMIT_MESSAGE" value="image tag handling added." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
