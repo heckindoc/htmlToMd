@@ -1,3 +1,5 @@
+package org.heckindoc.htmltomdconverter;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -10,25 +12,20 @@ import java.util.List;
 public class HtmlPlayground {
     public static void main(String[] args) throws IOException {
         Document doc = Jsoup.parse("""
-<pre> A simple test.
-                <code>function greetUser() {
-                    console.log("Hello, World!");
-                    return true;
-                }</code>
-                      A new paragraph after the code</pre>
-
-<a href="www.thesite.com">Visit Example Website</a>
-<h1>Heading 1</h1>
+                <pre> A simple test.
+                                <code>function greetUser() {
+                                    console.log("Hello, World!");
+                                    return true;
+                                }</code>
+                                      A new paragraph after the code</pre>
+                
+                <a href="www.thesite.com">Visit Example Website</a>
+                <h1>Heading 1</h1>
                 """);
 
         Elements children = doc.children();
         List<Node> childNodes = doc.childNodes();
         Element next = doc.firstElementChild();
-//        System.out.println("WHOLE TEXT EXAMPLE");
-//        System.out.println(next.wholeText());
-//        System.out.println("-------------");
-//        System.out.println(next.wholeOwnText());
-//        System.out.println(next.html());
         System.out.println(next);
         System.out.println("-----------------");
         System.out.println(next.firstElementChild());
@@ -61,23 +58,7 @@ public class HtmlPlayground {
         System.out.println(pre.nextElementSibling().wholeOwnText());
         System.out.println("-----------------");
         System.out.println(next.nextElementSibling());
-
-//        for (Element e : next.children()) {
-//            System.out.println(e.nodeName());
-//            System.out.print(e.wholeOwnText());
-//            System.out.printf("--- %s Children ___\n", e.normalName());
-//            System.out.println("Child --> " + e);
-//            System.out.println(e.nodeName());
-//            iterateNodes(e);
     }
-//
-//        System.out.println();
-//        System.out.println();
-//
-//        System.out.println("--- Attributes ---");
-//        for (Attribute a : body.child(1).attributes()) {
-//           System.out.println(a);
-//        }
 
 
     public static void iterateNodes(Element element) {

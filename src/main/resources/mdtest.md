@@ -1,4 +1,4 @@
-> Task :test.main()
+> Task :Test.main()
 # This is a heading
 
 This is a brand new paragraph that we are going to  
@@ -43,7 +43,7 @@ URL Missing: Visit Example Website
 
 **bold text**
 
-We will test 2 paragraphs.
+We will Test 2 paragraphs.
 
 Herein lies the second paragraph.
 

@@ -4,17 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15e8e32d-e8d7-4493-8b60-1d8f078e1bda" name="Changes" comment="Added code block and inline code handling.">
+    <list default="true" id="15e8e32d-e8d7-4493-8b60-1d8f078e1bda" name="Changes" comment="Tidying files">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/htmlPlayground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HtmlPlayground.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/htmlPlayground2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/commonMarkSpec.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/htmlTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HtmlPlayground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/heckindoc/htmltomdconverter/HtmlPlayground.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HtmlToMarkdownConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/heckindoc/htmltomdconverter/HtmlToMarkdownConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MarkdownToHtmlConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/heckindoc/htmltomdconverter/MarkdownToHtmlConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/heckindoc/htmltomdconverter/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/htmlTest2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/htmlTest2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mdtest.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mdtest.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mdtest2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/s-img.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/test.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +27,26 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="htmlToMd" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="htmlToMd" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="htmlToMd" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -79,7 +91,9 @@
     "Gradle.htmlToMd [:htmlPlayground2.main()].executor": "Run",
     "Gradle.htmlToMd [:htmlToMarkdown.main()].executor": "Run",
     "Gradle.htmlToMd [:markdownToHTML.main()].executor": "Run",
+    "Gradle.htmlToMd [:org.heckindoc.htmltomdconverter.test.main()].executor": "Run",
     "Gradle.htmlToMd [:test.main()].executor": "Run",
+    "Gradle.htmlToMd [build].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -102,9 +116,16 @@
       <recent name="C:\Developer\htmlToMd\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="HtmlPlayground" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HtmlPlayground" />
+      <option name="MAIN_CLASS_NAME" value="org.heckindoc.htmltomdconverter.HtmlPlayground" />
+      <module name="htmlToMd.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.heckindoc.htmltomdconverter.Test" />
       <module name="htmlToMd.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -124,27 +145,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="markdownToHTML" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="markdownToHTML" />
-      <module name="htmlToMd.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <module name="htmlToMd.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="htmlToMd [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.htmlToMd [build]" />
         <item itemvalue="Application.htmlPlayground2" />
-        <item itemvalue="Application.test" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.HtmlPlayground" />
         <item itemvalue="Application.htmlToMarkdown" />
-        <item itemvalue="Application.markdownToHTML" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791232017618</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Tidying files">
+      <option name="closed" value="true" />
+      <created>1791232917332</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1791232917332</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +265,8 @@
     <MESSAGE value="Small tidying, adding test image" />
     <MESSAGE value="image tag handling added." />
     <MESSAGE value="Added code block and inline code handling." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added code block and inline code handling." />
+    <MESSAGE value="Tidying files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tidying files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

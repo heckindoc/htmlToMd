@@ -1,9 +1,9 @@
 plugins {
-    id 'java'
+    id 'java-library'
 }
 
 group = 'org.heckindoc.htmltomdconverter'
-version = '1.0'
+version = '1.0.0'
 
 repositories {
     mavenCentral()
@@ -13,9 +13,6 @@ dependencies {
     // jsoup HTML parser library @ https://jsoup.org/
     implementation 'org.jsoup:jsoup:1.23.2'
     implementation("org.commonmark:commonmark:0.30.0")
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 test {
