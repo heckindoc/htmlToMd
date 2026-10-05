@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15e8e32d-e8d7-4493-8b60-1d8f078e1bda" name="Changes" comment="image tag handling added.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/htmlPlayground2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HtmlToMarkdownConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HtmlToMarkdownConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/htmlPlayground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/htmlPlayground.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/htmlTest2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/htmlTest2.html" afterDir="false" />
+    <list default="true" id="15e8e32d-e8d7-4493-8b60-1d8f078e1bda" name="Changes" comment="Added code block and inline code handling.">
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/htmlPlayground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HtmlPlayground.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/htmlPlayground2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/commonMarkSpec.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/htmlTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mdtest.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mdtest.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mdtest2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/s-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,8 +103,8 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.test">
-    <configuration name="htmlPlayground" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="htmlPlayground" />
+    <configuration name="HtmlPlayground" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HtmlPlayground" />
       <module name="htmlToMd.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,7 +142,7 @@
       <list>
         <item itemvalue="Application.htmlPlayground2" />
         <item itemvalue="Application.test" />
-        <item itemvalue="Application.htmlPlayground" />
+        <item itemvalue="Application.HtmlPlayground" />
         <item itemvalue="Application.htmlToMarkdown" />
         <item itemvalue="Application.markdownToHTML" />
       </list>
@@ -199,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791085958350</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added code block and inline code handling.">
+      <option name="closed" value="true" />
+      <created>1791232017618</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1791232017618</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +224,8 @@
     <MESSAGE value="Convert to instantiable classes from static classes. General tidying." />
     <MESSAGE value="Small tidying, adding test image" />
     <MESSAGE value="image tag handling added." />
-    <option name="LAST_COMMIT_MESSAGE" value="image tag handling added." />
+    <MESSAGE value="Added code block and inline code handling." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added code block and inline code handling." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

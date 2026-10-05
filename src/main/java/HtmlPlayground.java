@@ -1,4 +1,3 @@
-import org.commonmark.node.Code;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -6,10 +5,9 @@ import org.jsoup.nodes.Node;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.List;
 
-public class htmlPlayground {
+public class HtmlPlayground {
     public static void main(String[] args) throws IOException {
         Document doc = Jsoup.parse("""
 <pre> A simple test.

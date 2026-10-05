@@ -1,8 +1,0 @@
-# This is a heading
-
-New paragraph here
-- unordered list
-- next item
-- last item
-
-## Heading 2
