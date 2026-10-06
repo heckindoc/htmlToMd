@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15e8e32d-e8d7-4493-8b60-1d8f078e1bda" name="Changes" comment="Update readme.md">
+    <list default="true" id="15e8e32d-e8d7-4493-8b60-1d8f078e1bda" name="Changes" comment="fix gradle build">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +41,12 @@
                 <item name="htmlToMd" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="htmlToMd" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="publishing" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -78,38 +85,39 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.htmlToMd [:htmlPlayground.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.htmlToMd [:htmlPlayground2.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.htmlToMd [:htmlToMarkdown.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.htmlToMd [:markdownToHTML.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.htmlToMd [:org.heckindoc.htmltomdconverter.test.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.htmlToMd [:test.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.htmlToMd [build].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion.inline&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.htmlToMd [:htmlPlayground.main()].executor": "Run",
+    "Gradle.htmlToMd [:htmlPlayground2.main()].executor": "Run",
+    "Gradle.htmlToMd [:htmlToMarkdown.main()].executor": "Run",
+    "Gradle.htmlToMd [:markdownToHTML.main()].executor": "Run",
+    "Gradle.htmlToMd [:org.heckindoc.htmltomdconverter.test.main()].executor": "Run",
+    "Gradle.htmlToMd [:test.main()].executor": "Run",
+    "Gradle.htmlToMd [build].executor": "Run",
+    "Gradle.htmlToMd [publishToMavenLocal].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.completion.inline"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Developer\htmlToMd\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Gradle.htmlToMd [publishToMavenLocal]">
     <configuration name="HtmlPlayground" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.heckindoc.htmltomdconverter.HtmlPlayground" />
       <module name="htmlToMd.main" />
@@ -126,13 +134,6 @@
     </configuration>
     <configuration name="htmlPlayground2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="htmlPlayground2" />
-      <module name="htmlToMd.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="htmlToMarkdown" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="htmlToMarkdown" />
       <module name="htmlToMd.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -163,13 +164,38 @@
       <GradleCoverageDisabled>false</GradleCoverageDisabled>
       <method v="2" />
     </configuration>
+    <configuration name="htmlToMd [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <GradleProfilingDisabled>false</GradleProfilingDisabled>
+      <GradleCoverageDisabled>false</GradleCoverageDisabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.htmlToMd [publishToMavenLocal]" />
         <item itemvalue="Gradle.htmlToMd [build]" />
         <item itemvalue="Application.htmlPlayground2" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.HtmlPlayground" />
-        <item itemvalue="Application.htmlToMarkdown" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +295,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791235817226</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix gradle build">
+      <option name="closed" value="true" />
+      <created>1791255000349</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1791255000349</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +320,8 @@
     <MESSAGE value="Reorganize package structure" />
     <MESSAGE value="Add third party licensing." />
     <MESSAGE value="Update readme.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update readme.md" />
+    <MESSAGE value="fix gradle build" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix gradle build" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
