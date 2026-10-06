@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15e8e32d-e8d7-4493-8b60-1d8f078e1bda" name="Changes" comment="Add third party licensing.">
+    <list default="true" id="15e8e32d-e8d7-4493-8b60-1d8f078e1bda" name="Changes" comment="Update readme.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,32 +78,32 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.htmlToMd [:htmlPlayground.main()].executor": "Run",
-    "Gradle.htmlToMd [:htmlPlayground2.main()].executor": "Run",
-    "Gradle.htmlToMd [:htmlToMarkdown.main()].executor": "Run",
-    "Gradle.htmlToMd [:markdownToHTML.main()].executor": "Run",
-    "Gradle.htmlToMd [:org.heckindoc.htmltomdconverter.test.main()].executor": "Run",
-    "Gradle.htmlToMd [:test.main()].executor": "Run",
-    "Gradle.htmlToMd [build].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.completion.inline"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.htmlToMd [:htmlPlayground.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.htmlToMd [:htmlPlayground2.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.htmlToMd [:htmlToMarkdown.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.htmlToMd [:markdownToHTML.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.htmlToMd [:org.heckindoc.htmltomdconverter.test.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.htmlToMd [:test.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.htmlToMd [build].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion.inline&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Developer\htmlToMd\src\main\resources" />
@@ -262,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791234180127</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update readme.md">
+      <option name="closed" value="true" />
+      <created>1791235817226</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1791235817226</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +285,8 @@
     <MESSAGE value="Tidying files" />
     <MESSAGE value="Reorganize package structure" />
     <MESSAGE value="Add third party licensing." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add third party licensing." />
+    <MESSAGE value="Update readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update readme.md" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
